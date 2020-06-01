@@ -14,26 +14,26 @@
         <img id="thumbnail", class= "user-img-preview_content",accept="image/*", src="">
         <p class= "user-img-preview_text">画像をアップロード済み</p>
       </div>
-      <div class="field">
+      <div class="form-group">
         <label>名前</label>
         <%= f.text_field :name, class: "form-control", placeholder: "名前を入力してください" %>
       </div>
-      <div class="field">
+      <div class="form-group">
         <label>メールアドレス</label>
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <%= f.email_field :email,class: "form-control", autofocus: true, autocomplete: "email" %>
       </div>
-      <div class="field">
+      <div class="form-group">
         <label>パスワード</label>
         <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <em>(<%= @minimum_password_length %> 文字以上)</em>
         <% end %><br />
-        <%= f.password_field :password, autocomplete: "new-password" %>
+        <%= f.password_field :password, class: "form-control", autocomplete: "new-password" %>
       </div>
-      <div class="field">
+      <div class="form-group">
         <label>パスワード(確認)</label>
-        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        <%= f.password_field :password_confirmation, class: "form-control", autocomplete: "new-password" %>
       </div>
-      <div class="field">
+      <div class="form-group">
         <div><label>性別</label></div>
         <div class= "form-check form-check-inline">
           <%= f.radio_button :sex, "男", class: "form-check-input", id:"inline-radio1" %>
@@ -43,9 +43,10 @@
           <%= f.radio_button :sex, "女", class: "form-check-input", id:"inline-radio1" %>
           <label class="form-check-label" for="inlineRadio1">女</label>
         </div>
-      <div class="field">
-        <label>自己紹介文</label>
-        <%= text_area :user, :self_introduction, maxlength: "1000", rows:"10",placeholder: "趣味や好きなものなど", class: "form-control" %>
+      <div class="form-group">
+        <label>自己紹介文(最大1000文字)</label>
+        <%= text_area :user, :self_introduction, maxlength: "1000", rows:"10",placeholder: "趣味や好きなものなど", class: "form-control js-text" %>
+        <P class="js-text-count pull-right"></P>
       </div>
       <div class= "text-center">
         <%= f.submit "完了", class: "btn submit-btn"%>
