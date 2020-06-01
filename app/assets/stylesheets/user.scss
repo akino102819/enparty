@@ -3,13 +3,16 @@ body{
 }
 
 .sinup-page {
-  height:  100vh;
+  height:  150vh;
   background-color: #ecf5f4;
   .header {
     font-size: 30px;
     padding: 20px;
     text-align: center;
     background-color: #ecf5f4;
+  }
+  .user-img{
+    display: flex;
   }
   .container{
     padding: 30px;
@@ -48,13 +51,16 @@ body{
         display: none;
       }
     }
-    .user-img-preview{
+    .user-img-preview {
       margin: 0 auto;
       display: none;
-      text-align:center;
+      text-align: center;
+      &.is-active {
+        display: block;
+      }
       &_content{
-        max-width: 100px;
-        margin: 10px;
+        max-width: 150px;
+        margin-bottom: 10px;
         padding: 10px;
         border: solid thin lightcoral;
         border-radius: 5px;
@@ -66,10 +72,14 @@ body{
     .form-check-inline{
       margin-bottom: 20px;
     }
+    .pull-right{
+      text-align: right;
+    }
     .submit-btn{
       background: #60f02bdc;
       color: #fff;
       width: 200px;
+      margin-bottom: 30px;
       padding: 10px;
       border-radius:90px;
       &:hover {
