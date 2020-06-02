@@ -10,13 +10,16 @@
     &_title{
       margin-top:12vh;
     }
+    .sign{
+      display: flex;
+    }
     &_btn{
       display:block;
       max-width: 400px;
       padding:20px;
       margin: 0 auto;
       border-radius: 30px;
-      background-color: green;
+      background-color: #116d5e;
       color: #fff;
     }
   }
