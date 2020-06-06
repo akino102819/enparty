@@ -17,6 +17,7 @@ html, body {
   width: 90vw;
   height: 70vh;
   max-width: 600px;
+  max-height: 600px;
   margin: 0 auto;
   ul {
     margin: 0;
@@ -51,11 +52,18 @@ html, body {
       -webkit-backface-visibility: hidden;
       .userName {
         position: absolute;
-        bottom: 5px;
         color: #fff;
         z-index: 100;
         text-shadow: 0 2px 4px rgba(0,0,0,.5);
       }
+      .userIntroduction{
+        padding-right: 10px;
+        position: absolute;
+        bottom: 1%;
+        word-break : break-all;
+        font-size: 15px;
+      }
+      
       img {
         position: absolute;
         left: 50%;
