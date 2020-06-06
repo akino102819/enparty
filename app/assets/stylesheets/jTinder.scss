@@ -11,6 +11,7 @@ html, body {
   padding: 5%;
 }
 
+
 #tinderslide {
   position: relative;
   background: #fff;
@@ -165,7 +166,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   width: 200px;
-  margin: 15px auto;
+  margin: 5px auto;
   &.is-none {
     display: none;
   }
@@ -256,5 +257,10 @@ background: #f5f5f5;
       }
     }
   }
+}
+.friend_content{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
 }
 }
