@@ -8,3 +8,4 @@ class CreateReactions < ActiveRecord::Migration[5.2]
     end
   end
 end
+# to_user_idが○をされた人、from_user_idが○をした人です
