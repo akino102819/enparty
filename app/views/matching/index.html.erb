@@ -1,6 +1,5 @@
 <div class="matchingPage">
   <header class="header">
-    <i class="fas fa-comments fa-3x"></i>
     <div class="header_logo"><%= link_to "Enparty", users_path %></div>
   </header>
   <div class="container">
@@ -12,6 +11,11 @@
           <div class="matchingPerson">
           <div class="matchingPerson_img"><%= image_tag user.img_name.url(:thumb) %></div>
             <div class="matchingPerson_name"><%= user.name %></div>
+            <%= form_tag :chat_index, method: :post do %>
+              <input name= "user_id" type= "hidden"  value= "<%= user.id%>" />
+              <%= submit class="fas fa-comments fa-3x" %>
+              <input type="submit" value="&#xf002; 検索" class="fas">
+            <% end %>
           </div>
         <% end %>
       </div>
