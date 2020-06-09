@@ -227,6 +227,13 @@ background: #f5f5f5;
   width: 100vw;
   max-width: 610px;
   margin: 0 auto;
+  .header_logo{
+    a{
+      font-family: 'Vollkorn', serif;
+      font-size: 40px;
+      color: #48e6b4;
+    }
+  }
   & > ul {
     display: flex;
     align-items: center;

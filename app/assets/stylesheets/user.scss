@@ -90,6 +90,19 @@ body{
 }
 
 .usershowPage {
+  .header {
+    display: flex;
+    padding-top: 10px;
+    &_logo {
+      & > a {
+        font-family: 'Vollkorn', serif;
+        font-size: 40px;
+        color: #48e6b4;
+        width: 100px;
+        display: block;
+      }
+    }
+  }
   .userInfo {
     &_img {
       width: 170px;
@@ -98,7 +111,7 @@ body{
       border-radius: 50%;
       overflow: hidden;
       &>img {
-        width: 100%;
+        height: 100%;
       }
     }
 
@@ -139,5 +152,10 @@ body{
         }
       }
     }
+  }
+}
+.header_logo{
+  a{
+    text-decoration: none;
   }
 }

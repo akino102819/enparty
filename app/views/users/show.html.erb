@@ -1,5 +1,8 @@
 <div class='usershowPage'>
   <div class='container'>
+    <div class= "header">
+        <div class="header_logo"><%= link_to "Enparty", users_path %></div>
+    </div>
     <div class='userInfo'>
       <div class='userInfo_img'>
         <%= image_tag @user.img_name.url(:thumb) %>
