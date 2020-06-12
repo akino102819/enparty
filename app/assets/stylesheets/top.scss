@@ -9,6 +9,10 @@
     text-align: center;
     &_title{
       margin-top:12vh;
+      &_name{
+        font-size: 60px;
+        color: #e47616;
+      }
     }
     .sign{
       display: flex;
@@ -19,7 +23,7 @@
       padding:20px;
       margin: 0 auto;
       border-radius: 30px;
-      background-color: #116d5e;
+      background-color: #0e8c77;
       color: #fff;
     }
   }
